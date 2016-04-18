@@ -1,0 +1,13 @@
+---
+- hosts: localhost
+
+  vars:
+    aws_access_key: "{{ lookup('env','AWS_ACCESS_KEY') }}"
+    aws_secret_key: "{{ lookup('env','AWS_SECRET_KEY') }}"
+    stack_name: "ansible-cloudformation"
+    template_file: "files/cloudformation-example.json"
+    state: "{{ state }}"
+
+  roles:
+    - "{{ shared_playbooks }}/roles/cloudformation"
+
