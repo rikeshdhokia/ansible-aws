@@ -1,5 +1,6 @@
 # Ansible with CloudFormation
 
+needs to use https://github.com/rikeshdhokia/base-ansible
 
 ### Steps to get ansible cloud formation working
 
